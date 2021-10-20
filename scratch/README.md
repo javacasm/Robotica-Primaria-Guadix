@@ -1,13 +1,4 @@
-## Junio 2020
-
-
-## José Antonio Vacas @javacasm
-
-
-![Licencia CC](./images/Licencia_CC.png)
-
-
-## https://bit.ly/ProgMotril
+## Scratch
 
 ## Presentación
 

@@ -1,1 +1,0 @@
-7.0.HerramientasDiseño3D.md.md
