@@ -1,6 +1,6 @@
 #  Introducción a la robótica y al pensamiento computacional en educación Infantil y Primaria
 
-## [https://bit.ly/RobGuadix](https://bit.ly/RobGuadix)
+## [https://bit.ly/RobSTEAM](https://bit.ly/RobSTEAM)
 
 ![](./images/Licencia_CC_peque.png)
 
