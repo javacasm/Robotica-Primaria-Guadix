@@ -7,12 +7,37 @@ m6 = "6. Mejorando la calidad de las impresiones.docx"
 m7 = "7. Mantenimiento y Cuidados.docx"
 m8 = "8. Resolución de Problemas.docx"
 m9 = "9. Introducción al diseño 3D.docx"
+msmall = "Introduccion a la impresión 3D.docx"
 
 all: m1 m2 m3 m4 m5 m6 m7 m8 m9
 
 
+msmall:
+	pandoc --pdf-engine=xelatex   \
+					-V papersize:a4paper    \
+					--template=./LaTeX_ES.latex    \
+					-o  $(msmall)  \
+					Cabecera.md        \
+					Cabecera_latex.md \
+					0.0.Impresion3DParaTodos.md \
+					0.0.Introduccion3D.md \
+					0.1.Historia.md \
+					0.2.Aplicaciones.md \
+					0.3.Tecnologias3D.md \
+					0.4.ComprarImpresora3d.md \
+					0.5.GuiaRapida.md \
+					1.0.ProcesoImpresion3D.md \
+					2.0.Repositorios.md \
+					2.5.Filamentos.md \
+					3.0.Slicers.md \
+					3.1.Cura.md \
+					5.0.0.UsoImpresoras3D.md \
+					5.2.Uso_creality3.md \
+					9.0.HerramientasDiseño3D.md \
+					9.2.0.Tinkercad.md			
+
 m1:
-	pandoc --latex-engine=xelatex   \
+	pandoc --pdf-engine=xelatex   \
 					-V papersize:a4paper    \
 					--template=./LaTeX_ES.latex    \
 					-o  $(m1)  \
@@ -27,8 +52,10 @@ m1:
 					0.5.GuiaRapida.md \
 					1.0.ProcesoImpresion3D.md
 
+
+
 m2:
-	pandoc --latex-engine=xelatex   \
+	pandoc --pdf-engine=xelatex   \
 					-V papersize:a4paper    \
 					--template=./LaTeX_ES.latex    \
 					-o  $(m2)  \
@@ -38,7 +65,7 @@ m2:
 					2.1.Filamentos.md
 
 m3:
-	pandoc --latex-engine=xelatex   \
+	pandoc --pdf-engine=xelatex   \
 					-V papersize:a4paper    \
 					--template=./LaTeX_ES.latex    \
 					-o  $(m3)  \
@@ -50,7 +77,7 @@ m3:
 					3.7.soportes.md \
 
 m4:
-	pandoc --latex-engine=xelatex   \
+	pandoc --pdf-engine=xelatex   \
 					-V papersize:a4paper    \
 					--template=./LaTeX_ES.latex    \
 					-o  $(m4)  \
@@ -72,7 +99,7 @@ m4:
 					4.2.Montaje.Kingroon_KP3s.md
 
 m5:
-	pandoc --latex-engine=xelatex   \
+	pandoc --pdf-engine=xelatex   \
 					-V papersize:a4paper    \
 					--template=./LaTeX_ES.latex    \
 					-o  $(m5)  \
@@ -84,7 +111,7 @@ m5:
 					5.3.Uso_Kingroom_kp3s.md
 
 m6:
-	pandoc --latex-engine=xelatex   \
+	pandoc --pdf-engine=xelatex   \
 					-V papersize:a4paper    \
 					--template=./LaTeX_ES.latex    \
 					-o  $(m6)  \
@@ -110,7 +137,7 @@ m6:
 					6.9.4.Cajas.md
 
 m7:
-	pandoc --latex-engine=xelatex   \
+	pandoc --pdf-engine=xelatex   \
 					-V papersize:a4paper    \
 					--template=./LaTeX_ES.latex    \
 					-o  $(m7)  \
@@ -127,7 +154,7 @@ m7:
 			
 
 m8:
-	pandoc --latex-engine=xelatex   \
+	pandoc --pdf-engine=xelatex   \
 					-V papersize:a4paper    \
 					--template=./LaTeX_ES.latex    \
 					-o  $(m8)  \
@@ -141,7 +168,7 @@ m8:
 
 
 m9:
-	pandoc --latex-engine=xelatex   \
+	pandoc --pdf-engine=xelatex   \
 					-V papersize:a4paper    \
 					--template=./LaTeX_ES.latex    \
 					-o  $(m9)  \
